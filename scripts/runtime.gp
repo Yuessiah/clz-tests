@@ -10,7 +10,7 @@ set xtics rotate by 45 right
 
 plot [:][:500]'iteration.txt' using 1:2 with points title 'iteration',\
 'byte.txt' using 1:2 with points title 'byte',\
-'binary.txt' using 1:2 with points title 'binary',\
+'bitmask.txt' using 1:2 with points title 'bitmask',\
 'recursive.txt' using 1:2 with points title 'recursive',\
 'harley.txt' using 1:2 with points title 'harley'
 

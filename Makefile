@@ -9,7 +9,7 @@ endif
 
 EXEC = \
 	iteration \
-	binary \
+	bitmask \
 	byte \
 	recursive \
 	harley
@@ -36,7 +36,7 @@ run: $(EXEC)
 		taskset -c 1 ./$$method 67100000 67116384; \
 	done
 
-plot: iteration.txt iteration.txt binary.txt byte.txt harley.txt
+plot: iteration.txt iteration.txt bitmask.txt byte.txt harley.txt
 	gnuplot scripts/runtime.gp
 
 .PHONY: clean
